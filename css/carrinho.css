@@ -1,0 +1,177 @@
+:root {
+    --background-clean: beige;
+    --cor-da-empresa: orange;
+}
+
+.container-carrinho-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 25px 0;
+    font-size: 35px;
+}
+
+.bi-chevron-double-left {
+    color: black;
+}
+
+.bi-chevron-double-left:hover {
+    color: var(--cor-da-empresa);
+}
+
+.container-carrinho-top p {
+    font-weight: 700;
+    text-shadow: 0.1em 0.1em 0.1em var(--cor-da-empresa);
+}
+
+.container-carrinho-top .bi-cart-x {
+    color: red;
+}
+
+.container-carrinho-top .bi-cart-x:hover {
+    color: #da1010b0;
+}
+
+section.produtos-container {
+    width: 750px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: var(--background-clean);
+    -webkit-box-shadow: 10px 10px 5px 0px var(--cor-da-empresa);
+    -moz-box-shadow: 10px 10px 5px 0px var(--cor-da-empresa);
+    box-shadow: 10px 10px 5px 0px var(--cor-da-empresa);
+    border-radius: 8px;
+}
+
+.produtos-container img {
+    width: 150px;
+}
+
+.qtd-produto {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+.prod-nome {
+    font-weight: 700;
+    text-shadow: 0.1em 0.1em 0.1em var(--cor-da-empresa);
+}
+
+.bi-dash-square, .bi-plus-square {
+    color: black;
+}
+
+.bi-dash-square:hover, .bi-plus-square:hover {
+    color: var(--cor-da-empresa);
+}
+
+.preco-lixo-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bi-trash {
+    font-size: 50px;
+    color: red;
+}
+
+.bi-trash:hover {
+    color: #da1010b0;
+}
+
+.container-cupom {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.container-cupom input {
+    all: unset;
+    padding: 10px;
+    width: 46%;
+    font-size: 25px;
+    border: 1mm ridge rgb(255, 197, 5);
+    border-radius: 8px;
+    color: gray;
+}
+
+.container-cupom button {
+    all: unset;
+    padding: 0 30px;
+    height: 55px;
+    background-color: var(--cor-da-empresa);
+    text-align: center;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-left: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.container-cupom button:hover {
+    background-color: rgb(255, 197, 5);
+}
+
+.valor-pagamento {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.preco-texto {
+    margin-top: 25px;
+    color: var(--cor-da-empresa);
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.valor-pagamento button {
+    all: unset;
+    padding: 0 100px;
+    height: 55px;
+    background-color: var(--cor-da-empresa);
+    text-align: center;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-left: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.valor-pagamento button:hover {
+    background-color: rgb(255, 197, 5);
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        width: 100%;
+    }
+
+    .container-carrinho-top {
+        font-size: 25px;
+    }
+
+    section.produtos-container {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+    }
+
+    .container-cupom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .valor-pagamento button {
+        width: 20%;
+    }
+}
