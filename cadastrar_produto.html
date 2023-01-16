@@ -4,62 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style-padrao.css">
+    <link rel="stylesheet" href="./css/cadastro_produto.css">
     <title>CADASTRO DE PRODUTO</title>
 </head>
 <body>
-    <main>
-        <header>
-            <nav>
-                <ul>
-                    <li><i class="bi bi-list"></i></li>
-                    <li><i class="bi bi-geo-alt"></i></li>
-                    <li><p>Londrina, PR</p></li>
-                    <li><i class="bi bi-card-image"></i></li>
-                </ul>
-            </nav>
-        </header>
+    <header class="cabecalho">
+        <nav class="menu">
+            <ul class="ul-menu">
+                <a href="./login.html"><li><i class="bi bi-file-person"></i></li></a>
+                <li id="imagem-localizacao">
+                    <i class="bi bi-geo-alt"></i>
+                    <p class="nome-localizacao">Londrina, PR</p>
+                </li>
+                <li><i class="bi bi-card-image"></i></li>
+            </ul>
+        </nav>
+    </header>
 
-        <section>
-            <h1>CADASTRAR PRODUTO</h1>
+    <main>
+        <section class="formulario">
+            <h1 id="cadastro-produto">CADASTRAR PRODUTO</h1>
             <form action="">
-                <div>
+                <div class="inputs-form">
                     <label for="">NOME DO PRODUTO</label>
-                    <input type="text">
+                    <input type="text" placeholder="Digite o nome do produto">
 
                     <label for="">DESCRIÇÃO DO PRODUTO</label>
-                    <input type="text">
+                    <input type="text" placeholder="Digite a descrição do produto">
 
                     <label for="">CATEGORIA</label>
-                    <input type="text">
+                    <input type="text" placeholder="Digite a categoria do produto">
 
                     <label for="">PREÇO UNITÁRIO</label>
-                    <input type="text">
+                    <input type="number" placeholder="Informe o preço do produto">
 
                     <label for="">CÓDIGO DE BARRAS</label>
-                    <input type="text">
+                    <input type="text" placeholder="Digite o código de barras">
 
                     <button>CADASTRAR PRODUTO</button>
                 </div>
             </form>
         </section>
-
-
-        <footer>
-            <ul>
-                <li>
-                    <a href=""><i class="bi bi-house-fill"></i><p>HOME</p></a>
-                </li>
-                <li>
-                    <a href=""><i class="bi bi-emoji-smile"></i><p>PERFIL</p></a>
-                </li>
-                <li>
-                    <a href=""><i class="bi bi-receipt"></i><p>CUPONS</p></a>
-                </li>
-                <li>
-                    <a href=""><i class="bi bi-star-fill"></i><p>PEDIDOS</p></a>
-                </li>
-            </ul>
-        </footer>
     </main>
+
+    <footer id="footer" class="footer">
+        <ul class="footer-card">
+            <a href="./home.html">
+                <li class="footer-item">
+                    <i class="bi bi-house-fill"></i>
+                    <p class="footer-nome-item">HOME</p>
+                </li>
+            </a>
+            
+            <a href="./cadastrar_usuario.html">
+                <li class="footer-item">
+                    <i class="bi bi-emoji-smile"></i>
+                    <p class="footer-nome-item">CADASTRO USUÁRIO</p>
+                </li>
+            </a>
+            
+            <a href="./cadastrar_produto.html">
+                <li class="footer-item">
+                    <i class="bi bi-upc-scan"></i>
+                    <p class="footer-nome-item">CADASTRO DE PRODUTO</p>
+                </li>
+            </a>
+
+            <a href="./carrinho.html">
+                <li class="footer-item">
+                    <i class="bi bi-cart"></i>
+                    <p class="footer-nome-item">CARRINHO</p>
+                </li>
+            </a>
+            
+            <a href="./produto.html">
+                <li class="footer-item">
+                    <i class="bi bi-stickies"></i>
+                    <p class="footer-nome-item">PRODUTO</p>
+                </li>
+            </a>
+        </ul>
+    </footer>
 </body>
 </html>

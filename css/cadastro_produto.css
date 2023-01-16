@@ -1,0 +1,87 @@
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#cadastro-produto {
+    font-style: bold;
+    font-size: 30px;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    color: var(--cor-da-empresa);
+}
+
+div.inputs-form {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.inputs-form label {
+    margin-bottom: 15px;
+    margin-top: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 0.1em 0.1em 0.1em var(--cor-da-empresa);
+}
+
+.inputs-form input {
+    all: unset;
+    width: 90%;
+    height: 20px;
+    margin: auto;
+    font-size: 25px;
+    padding: 1.2rem 0 1.2rem;
+    padding-left: 1rem;
+    border: 1mm ridge rgb(255, 197, 5);
+    border-radius: 8px;
+    color: gray;
+}
+
+.formulario button {
+    all: unset;
+    padding: 0 130px;
+    height: 45px;
+    background-color: var(--cor-da-empresa);
+    text-align: center;
+    font-weight: 700;
+    margin-top: 25px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: rgb(255, 197, 5);
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        width: 100%;
+    }
+
+    #cadastro-produto {
+        font-size: 25px;
+    }
+
+    div.inputs-form {
+        width: 75%;
+        border: none;
+    }
+
+    ::-webkit-input-placeholder {
+        font-size: 21px;
+    }
+
+    .formulario button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 12%;
+        font-size: 15px;
+    }
+}
