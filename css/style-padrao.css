@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    font-family: 'Mukta', Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+}
+
+:root {
+    --background-clean: beige;
+    --cor-da-empresa: orange;
+}
+
+/*Estilização do HEARDER - NAV */
+
+.cabecalho {
+    width: 100%;
+    background-image: url(https://thumbs.dreamstime.com/z/canto-da-comida-mexicana-vis%C3%A3o-de-cima-para-baixo-sobre-um-fundo-banner-escuro-com-espa%C3%A7o-c%C3%B3pia-m%C3%A9xico-food-border-top-down-191566359.jpg);
+}
+
+.menu .ul-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.ul-menu li {
+    list-style: none;
+    padding: 2rem;
+    color: antiquewhite;
+}
+
+.bi-file-person, .bi-geo-alt, .bi-card-image {
+    font-size: 60px;
+    color: var(--background-clean);
+}
+
+ul li#imagem-localizacao {
+    display: flex;
+    align-items: center;
+    padding-right: 0;
+    padding-left: 5rem;
+    margin-right: .8rem;
+}
+
+.nome-localizacao {
+    font-size: 40px;
+    padding-left: 0;
+    padding-right: 5rem;
+}
+
+/*Estilização do FOOTER*/
+
+.footer {
+    background-color: var(--background-clean);
+    margin-top: 5rem;
+}
+
+.footer-card {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.footer-card li {
+    list-style: none;
+}
+
+.footer-card a {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+.footer-item {
+    margin: .5rem;
+}
+
+i.bi-house-fill, i.bi-emoji-smile, i.bi-upc-scan, i.bi-cart, i.bi-stickies {
+    font-size: 60px;
+    color: var(--cor-da-empresa);
+}
+
+.footer-nome-item {
+    font-size: 20px;
+    font-weight: 700;
+    color: gray;
+}
+
+/*Usando media queries para transformar nossa page
+    acessivel a tela menores.*/
+
+    @media screen and (max-width: 480px) {
+        body {
+            width: 100%;
+        }
+        header {
+            display: flex;
+        }
+
+        i.bi-geo-alt, .nome-localizacao, i.bi-card-image {
+            display: none;
+        }
+
+        ul.footer-card {
+            flex-wrap: wrap;
+            margin: auto;
+            justify-content: center;
+        }
+
+        .footer-card a {
+            width: 100%;
+        }
+    }

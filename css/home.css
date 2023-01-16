@@ -1,0 +1,222 @@
+/*Estilização da seção das MENSAGENS*/
+
+section#mensagens-inicio {
+    padding: 2rem;
+    background-color: var(--background-clean);
+}
+
+#nome-empresa {
+    font-style: bold;
+    font-size: 50px;
+    margin-bottom: .5rem;
+    color: var(--cor-da-empresa);
+}
+
+.mensagem {
+    color: gray;
+    font-size: 25px;
+}
+
+/*Estilização da seção INPUT*/
+
+section#input {
+    display: flex;
+    padding-top: .5rem;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+}
+
+i.bi-search {
+    position: absolute;
+    color: var(--cor-da-empresa);
+    padding-top: .2rem;
+    padding-left: 4rem;
+    font-size: 40px;
+}
+
+#input-text {
+    width: 90%;
+    margin: auto;
+    font-size: 25px;
+    padding: 1.2rem 0 1.2rem;
+    padding-left: 4rem;
+    border: 2mm ridge rgb(255, 197, 5);
+    text-align: center;
+    border-radius: 8px;
+}
+
+input:focus {
+    outline: 0;
+}
+
+::-webkit-input-placeholder {
+    color: grey;
+}
+
+input[type=text] {
+    color: grey;
+}
+
+/*Estilização da seção CATEGORIA*/
+
+section#categorias {
+    display: flex;
+    justify-content: space-around;
+}
+
+#categoria-ul {
+    display: flex;
+    justify-content: center;
+}
+
+.categoria-a {
+    margin: 3rem 5rem;
+    text-decoration: none;
+    justify-content: center;
+}
+
+li.categoria {
+    margin: auto;
+}
+
+.categoria {
+    margin: auto;
+    color: gray;
+    list-style: none;
+    border: solid 1px var(--cor-da-empresa);
+    border-radius: 2rem;
+    width: 90%;
+    padding: 2rem;
+    margin: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+    transition: transform 0.6s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.categoria:hover {
+    background-color: var(--cor-da-empresa);
+    border: 5px solid grey;
+    transform: scale(1.0);
+    box-shadow: 0 5px 15px black;
+}
+
+/*Estilização da seção PRODUTO*/
+
+section#cards-produtos {
+    display: flex;
+}
+
+.card-produto {
+    display: block;
+    margin: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0 5px 15px black;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    align-content: center;
+}
+
+.card-produto:hover {
+    box-shadow: inset 50px 0 0 0;
+    color: white;
+}
+
+.card-produto img {
+    display: block;
+    width: 70%;
+    margin: auto;
+    justify-content: center;
+}
+
+h3.nome-do-produto {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size: 20px;
+    color: var(--cor-da-empresa);
+    margin-bottom: 1.3rem;
+    margin-top: .2rem;
+}
+
+/*Estilização do VERMAIS*/
+
+div#ver-mais {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 30px;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+div#ver-mais a {
+    color: grey;
+    text-decoration: none;
+    margin: .8rem 2rem;
+}
+
+/*Estilização da AVALIAÇÃO*/
+
+section#avaliacao {
+    text-align: center;
+    border: .5rem outset var(--cor-da-empresa);
+    outline: .5rem solid rgb(221, 237, 99);
+    box-shadow: 0 0 0 1rem gray;
+    border-radius: 12px;
+    margin: 2rem;
+    padding: 1rem;
+    width: 50%;
+    margin: auto;
+    font: bold 1rem sans-serif;
+}
+
+#titulo-avaliacao {
+    font-size: 40px;
+    color: var(--cor-da-empresa);
+    text-shadow: 2px 2px black;
+}
+
+.bi-hand-thumbs-up, .bi-hand-thumbs-down {
+    font-size: 40px;
+    color: var(--cor-da-empresa);
+    text-shadow: 2px 2px black;
+}
+
+#frase-avaliacao {
+    font-size: 30px;
+    color: gray;
+    padding: 1.2rem;
+}
+
+/*Responsividade dispositivos moveis*/
+
+@media screen and (max-width: 480px) {
+    body {
+        width: 100%;
+    }
+
+    i.bi-search {
+        position: absolute;
+        margin-right: 3rem;
+        padding-left: 2rem;
+    }
+
+    #categoria-ul {
+        flex-wrap: wrap;
+        margin-right: 10%;
+    }
+
+    #cards-produtos {
+        flex-wrap: wrap;
+    }
+
+    div.card-produto {
+        width: 100%;
+    }
+
+    span#frase-avaliacao {
+        display: none;
+    }
+}
