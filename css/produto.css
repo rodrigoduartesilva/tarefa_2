@@ -1,0 +1,108 @@
+.container-coracao-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    margin: 25px 0;
+    font-size: 35px;
+}
+
+.bi-chevron-double-left {
+    color: black;
+}
+
+.bi-chevron-double-left:hover {
+    color: var(--cor-da-empresa);
+}
+
+.bi-heart-fill {
+    color: gray;
+}
+
+.bi-heart-fill:hover {
+    color: red;
+}
+
+.container-produto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-produto h1 {
+    font-weight: 700;
+    text-shadow: 0.1em 0.1em 0.1em var(--cor-da-empresa);
+    margin: auto;
+}
+
+.nome-prod-paragrafo {
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.img-produto img {
+    width: 250px;
+}
+
+.qtd-produto {
+    width: 150px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.bi-dash-square, .bi-plus-square {
+    color: black;
+}
+
+.bi-dash-square:hover, .bi-plus-square:hover {
+    color: var(--cor-da-empresa);
+}
+
+.preco-texto {
+    margin-top: 25px;
+    color: var(--cor-da-empresa);
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.add-carrinho button {
+    all: unset;
+    padding: 0 100px;
+    height: 55px;
+    background-color: var(--cor-da-empresa);
+    text-align: center;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-left: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.add-carrinho button:hover {
+    background-color: rgb(255, 197, 5);
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        width: 100%;
+    }
+
+    .container-produto {
+        margin: auto;
+        width: 80%;
+    }
+
+    .nome-prod-paragrafo {
+        font-size: 16px;
+    }
+
+    .add-carrinho button {
+        font-size: 13.7px;
+    }
+}

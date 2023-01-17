@@ -4,69 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style-padrao.css">
+    <link rel="stylesheet" href="./css/produto.css">
     <title>PRODUTO</title>
 </head>
 <body>
-    <main>
-        <header>
-            <nav>
-                <ul>
-                    <li><i class="bi bi-list"></i></li>
-                    <li><i class="bi bi-geo-alt"></i></li>
-                    <li><p>Londrina, PR</p></li>
-                    <li><i class="bi bi-card-image"></i></li>
-                </ul>
-            </nav>
-        </header>
+    <header class="cabecalho">
+        <nav class="menu">
+            <ul class="ul-menu">
+                <a href="./login.html"><li><i class="bi bi-file-person"></i></li></a>
+                <li id="imagem-localizacao">
+                    <i class="bi bi-geo-alt"></i>
+                    <p class="nome-localizacao">Londrina, PR</p>
+                </li>
+                <li><i class="bi bi-card-image"></i></li>
+            </ul>
+        </nav>
+    </header>
 
-        <section>
-            <i class="bi bi-chevron-double-left"></i>
-            <i class="bi bi-heart-fill"></i>
+    <main class="container-principal">
+        <section class="container-coracao-top">
+            <a href="#"><i class="bi bi-chevron-double-left"></i></a>
+            <a href="#"><i class="bi bi-heart-fill"></i></a>
         </section>
 
-        <section>
+        <section class="container-produto">
             <h1>NOME DO PRODUTO</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe reiciendis minus odit. Sed veniam corporis mollitia porro exercitationem a impedit.</p>
+            <p class="nome-prod-paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe reiciendis minus odit. Sed veniam corporis mollitia porro exercitationem a impedit.</p>
         
-            <div>
+            <div class="img-produto">
                 <img src="https://png.pngtree.com/png-vector/20190120/ourlarge/pngtree-gallery-vector-icon-png-image_470660.jpg" alt="Imagem do Produto">
             </div>
 
-            <div>
-                <i class="bi bi-dash-square"></i>
+            <div class="qtd-produto">
+                <a href="#"><i class="bi bi-dash-square"></i></a>
                 <p>1</p>
-                <i class="bi bi-plus-square"></i>
+                <a href="#"><i class="bi bi-plus-square"></i></a>
             </div>
 
             <div>
-                <p>Preço Unitário</p>
+                <p class="preco-texto">Preço Unitário</p>
                 <p>R$ 00000,00</p>
 
-                <p>Preço Total</p>
+                <p class="preco-texto">Preço Total</p>
                 <p>R$ 00000,00</p>
             </div>
 
-            <div>
-                <i class="bi bi-cart-plus"></i>
+            <div class="add-carrinho">
                 <button>ADICIONAR AO CARRINHO</button>
             </div>
         </section>
-
-        <footer>
-            <ul>
-                <li>
-                    <a href=""><i class="bi bi-house-fill"></i><p>HOME</p></a>
-                </li>
-                <li>
-                    <a href=""><i class="bi bi-emoji-smile"></i><p>PERFIL</p></a>
-                </li>
-                <li>
-                    <a href=""><i class="bi bi-receipt"></i><p>CUPONS</p></a>
-                </li>
-                <li>
-                    <a href=""><i class="bi bi-star-fill"></i><p>PEDIDOS</p></a>
-                </li>
-            </ul>
-        </footer>
     </main>
+
+    <footer id="footer" class="footer">
+        <ul class="footer-card">
+            <a href="./home.html">
+                <li class="footer-item">
+                    <i class="bi bi-house-fill"></i>
+                    <p class="footer-nome-item">HOME</p>
+                </li>
+            </a>
+            
+            <a href="./cadastrar_usuario.html">
+                <li class="footer-item">
+                    <i class="bi bi-emoji-smile"></i>
+                    <p class="footer-nome-item">CADASTRO USUÁRIO</p>
+                </li>
+            </a>
+            
+            <a href="./cadastrar_produto.html">
+                <li class="footer-item">
+                    <i class="bi bi-upc-scan"></i>
+                    <p class="footer-nome-item">CADASTRO DE PRODUTO</p>
+                </li>
+            </a>
+
+            <a href="./carrinho.html">
+                <li class="footer-item">
+                    <i class="bi bi-cart"></i>
+                    <p class="footer-nome-item">CARRINHO</p>
+                </li>
+            </a>
+            
+            <a href="./produto.html">
+                <li class="footer-item">
+                    <i class="bi bi-stickies"></i>
+                    <p class="footer-nome-item">PRODUTO</p>
+                </li>
+            </a>
+        </ul>
+    </footer>
 </body>
