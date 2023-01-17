@@ -17,7 +17,7 @@ div.inputs-form {
     display: flex;
     flex-direction: column;
     border: 1px solid black;
-    padding: 30px;
+    padding: 18px;
     border-radius: 8px;
 }
 
@@ -69,8 +69,11 @@ div.inputs-form {
     }
 
     div.inputs-form {
-        width: 75%;
         border: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     ::-webkit-input-placeholder {
@@ -81,7 +84,7 @@ div.inputs-form {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 12%;
+        width: 20%;
         font-size: 15px;
     }
 }
